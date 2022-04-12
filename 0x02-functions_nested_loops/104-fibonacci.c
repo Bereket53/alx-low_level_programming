@@ -5,28 +5,27 @@
   *
   * Return: Nothing!
   */
-int main(void) 
+int main(void)
 {
-	int first_no = 0;
-	int second_no = 1;
-	int next_no;
-	int i;
-	
-	for ( i = 0 ; i < 100 ; i++ )
+	int i = 0;
+	long j = 1, k = 2;
+
+	while (i < 100)
 	{
-		if ( i <= 1 )
-			next_no = i;
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
 		else
 		{
-			next_no = first_no + second_no;
-			first_no = second_no;
-			second_no = next_no;
-			if(next_no > 100) {
-				break;
-			}
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
-		printf("%d  ",next_no);
+
+		++i;
 	}
 
-  return 0;
+	printf("\n");
+	return (0);
 }
