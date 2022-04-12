@@ -10,7 +10,7 @@ int main(void)
 	int i = 0;
 	long double j = 1, k = 2;
 
-	while (i < 100)
+	while (i < 102)
 	{
 		if (i == 0)
 			printf("%Lf", j);
