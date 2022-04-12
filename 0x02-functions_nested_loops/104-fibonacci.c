@@ -8,19 +8,19 @@
 int main(void)
 {
 	int i = 0;
-	unsigned float j = 1, k = 2;
+	long double j = 1, k = 2;
 
 	while (i < 100)
 	{
 		if (i == 0)
-			printf("%fd", j);
+			printf("%ld", j);
 		else if (i == 1)
-			printf(", %fd", k);
+			printf(", %ld", k);
 		else
 		{
 			k += j;
 			j = k - j;
-			printf(", %fd", k);
+			printf(", %ld", k);
 		}
 
 		++i;
