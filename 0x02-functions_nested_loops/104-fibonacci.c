@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i = 0;
-	long long j = 1, k = 2;
+	long double j = 1, k = 2;
 
 	while (i < 100)
 	{
