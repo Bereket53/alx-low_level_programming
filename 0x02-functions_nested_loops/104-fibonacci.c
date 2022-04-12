@@ -14,14 +14,14 @@ int main(void)
 	while (i < 98)
 	{
 		if (i == 0)
-			printf(floor("%Lf", j));
+			printf("%Lf", floor( j));
 		else if (i == 1)
-			printf(floor(", %Lf", k));
+			printf(", %Lf", floor(k));
 		else
 		{
 			k += j;
 			j = k - j;
-			printf(floor(", %Lf", k));
+			printf(", %Lf", floor(k));
 		}
 
 		++i;
